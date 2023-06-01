@@ -1,0 +1,253 @@
+body {
+  background-color: #ffffff;
+  border: 15px solid slateblue;
+  max-width: 1200px;
+  margin: 50px auto 50px;
+  padding: 25px;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  width: 70%;
+}
+
+.logo {
+  width: 20%px;
+  height: auto;
+  border-radius: 1998px;
+  border: 2px solid slateblue;
+  margin: 0px auto 0px 0px;
+  text-align: center;
+}
+.o1,
+.s1 {
+  display: inline;
+  margin-top: 30px;
+}
+.o1 {
+  font-size: 100px;
+  color: slateblue;
+}
+.s1 {
+  font-size: 40px;
+  color: slateblue;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+h1 {
+  color: #000;
+}
+label {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  display: block;
+}
+input {
+  height: 35px;
+  font-size: 18px;
+  padding-left: 15px;
+  border: 2px solid #000;
+  /* margin-top: 25px; */
+}
+input:focus {
+  border-color: slateblue;
+  outline: 2px solid slateblue;
+  border-radius: 8px;
+}
+
+.student-info-one,
+.student-info-two,
+.form-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.student-info-one > input {
+  width: 30%;
+}
+.form-one,
+.form-two,
+.form-three,
+.form-four {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.form-two > .streetAddress {
+  width: 98%;
+}
+.form-three,
+.form-four {
+  margin-top: 25px;
+}
+.student-info-two input,
+.form-two input {
+  margin-top: 25px;
+}
+.student-info-two input,
+.form-two input,
+.form-three input,
+.form-flex > input {
+  width: 45%;
+}
+
+.hero-one,
+.hero-two {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  background-color: whitesmoke;
+  border-bottom: 5px solid hsl(208, 77%, 88%);
+}
+.form-four #addNewRecord {
+  display: block;
+  width: 200px;
+  height: 35px;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 18px;
+  padding-left: 5px;
+  border: none;
+  padding: 10px 0px;
+}
+.form-four #addNewRecord > span {
+  margin-right: 10px;
+}
+.hero-one div {
+  margin-top: 10px;
+  margin-left: -10px;
+  padding-top: 0px;
+  border-top: 1px solid #ffffff;
+}
+select {
+  width: 200px;
+  height: 35px;
+  padding-left: 0px 10px;
+  /* margin-left: 20px; */
+  font-size: 18px;
+  /* outline: 1px solid hsl(0, 23%, 97%); */
+  border: 1px solid hsl(0, 23%, 97%);
+}
+select option {
+  font-size: 18px;
+}
+#course {
+  margin-left: 0px;
+}
+.hero-one div > .empty {
+  width: 350px;
+  height: 30px;
+  display: inline;
+  background-color: whitesmoke;
+  border: 3px solid #ffffff;
+}
+.hero-two {
+  margin-top: 15px;
+}
+textarea,
+.hero-two button {
+  width: 100%;
+  margin: 0 auto;
+}
+textarea {
+  width: 98%;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.hero-two button {
+  width: 99.5%;
+  height: 30px;
+  background-color: slateblue;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  body {
+    max-width: 100%;
+    padding: 20px auto;
+    margin: 20px auto;
+    /* overflow-x: hidden; */
+  }
+  .hero-one div > .empty {
+    display: none;
+  }
+
+  .form-one,
+  .form-two,
+  .form-three,
+  .form-four {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .student-info-one,
+  .student-info-two,
+  .form-flex {
+    width: 100%;
+    /* margin: 0 auto; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* column-gap: 20px; */
+  }
+  label {
+    margin-top: 20px;
+  }
+  .student-info-one > input,
+  .student-info-two input,
+  .form-flex input,
+  .form-three input,
+  .form-two > .streetAddress,
+  .hero-one {
+    width: 80%;
+    margin: 15px 0px auto;
+    /* border: 2px solid; */
+  }
+
+  .hero-one,
+  .hero-two {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-two {
+    margin-top: 20px;
+  }
+  .form-four #addNewRecord {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .hero-one div > select,
+  option {
+    width: 100%;
+  }
+  select {
+    margin-top: 20px 0px auto;
+  }
+
+  .hero-two button {
+    width: 100%;
+    margin: 15px 0px auto;
+  }
+  textarea {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    padding: 10px 0px;
+  }
+  textarea {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

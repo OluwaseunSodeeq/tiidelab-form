@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiidelab Signup form</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="o1">O</div>
+        <div class="s1">S</div>
+      </div>
+      <div class="heading">
+        <h1>Student Registration Form</h1>
+        <p>
+          fill out the form to apply for the training courses. You can consider
+          your application accepted after you recieve a conformation email.
+        </p>
+      </div>
+    </header>
+    <form action="">
+      <div class="form-one">
+        <label for="">Student Information</label>
+        <div class="student-info-one">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            id="firstName"
+          />
+          <input
+            type="text"
+            name=""
+            placeholder="Middle Name"
+            id="middleName"
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            id="lastName"
+          />
+        </div>
+        <div class="student-info-two">
+          <!-- onfocus="(this.type='date')" -->
+          <input class="date-control" placeholder="Date of Birth" />
+          <input
+            type="text"
+            name="studentId"
+            placeholder="Student ID"
+            id="studentId"
+          />
+        </div>
+      </div>
+      <div class="form-two">
+        <label for="">Address</label>
+        <input
+          type="text"
+          name="streetAddress"
+          placeholder="Street Address"
+          id="streetAddress"
+          class="streetAddress"
+        />
+        <div class="form-flex">
+          <input type="text" name="city" placeholder="City" id="city" />
+          <input
+            type="text"
+            name="state-province"
+            placeholder="State/Province"
+            id="state-province"
+          />
+        </div>
+        <div class="form-flex">
+          <input
+            type="text"
+            name="country"
+            placeholder="Country"
+            id="country"
+          />
+          <input
+            type="text"
+            name="zipCode"
+            placeholder="Zip Code"
+            id="zipCode"
+          />
+        </div>
+      </div>
+      <div class="form-three">
+        <label for="">Contact Information</label>
+        <div class="form-flex">
+          <input type="email" name="email" placeholder="E-mail" id="email" />
+          <input type="text" name="alt-email" placeholder="" id="alt-email" />
+        </div>
+      </div>
+      <div class="form-four">
+        <label for="">Courses <span>*</span></label>
+        <div class="hero-one">
+          <button id="addNewRecord"><span>+</span> Add new record</button>
+          <div>
+            <select name="" id="course">
+              <option value="course">course</option>
+              <option value="">Frontend</option>
+              <option value="">Backend</option>
+              <option value="">Ui/Ux</option>
+            </select>
+            <select name="" id="level">
+              <option value="level">level</option>
+              <option value="">Beginner</option>
+              <option value="">Intermediate</option>
+              <option value="">Expert</option>
+            </select>
+            <select name="" id="language">
+              <option value="language">language</option>
+              <option value="">English</option>
+              <option value="">French</option>
+              <option value="">Others</option>
+            </select>
+            <select name="" id="Start Date">
+              <option value="Start Date">Start Date</option>
+              <option value="">Frontend</option>
+              <option value="">Backend</option>
+              <option value="">Ui/Ux</option>
+            </select>
+            <input type="text" class="empty" />
+          </div>
+        </div>
+        <div class="hero-two">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Comments"
+          ></textarea>
+          <button type="submit">SEND REQUEST</button>
+        </div>
+      </div>
+    </form>
+    <!-- <div
+      style="
+        background-color: mistyrose;
+        width: 70%;
+        padding: 15px;
+        margin: 40px auto;
+      "
+    >
+      <div style="width: 50%; float: left"></div>
+      <div style="width: 50%; float: left">
+        <h3>User registration Form</h3>
+        <form action="" name="signupForm" id="signupForm" enctype="">
+          <input
+            type="text"
+            name="userName"
+            id="fullName"
+            placeholder="Enter Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email Address"
+            required
+          />
+          <input
+            type="text"
+            name="username"
+            id="userName"
+            placeholder="Enter Your Username"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Your Password"
+            required
+          />
+          <input
+            type="password"
+            name="confirmpassword"
+            id="confirmPassword"
+            placeholder="Enter Your Password Again"
+            required
+          />
+          <input type="submit" value="Signup" style="width: 85%" />
+        </form>
+      </div>
+    </div>
+    <div style="float: left"></div> -->
+  </body>
+</html>
