@@ -1,3 +1,11 @@
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   border: 15px solid slateblue;
@@ -141,15 +149,19 @@ select option {
 #course {
   margin-left: 0px;
 }
-.hero-one div > .empty {
-  width: 350px;
-  height: 30px;
+.hero-one > div > button {
+  width: 280px;
+  height: 33px;
   display: inline;
   background-color: whitesmoke;
   border: 3px solid #ffffff;
+  vertical-align: middle;
 }
 .hero-two {
   margin-top: 15px;
+}
+textarea {
+  padding: 20px;
 }
 textarea,
 .hero-two button {

@@ -22,7 +22,7 @@
         </p>
       </div>
     </header>
-    <form action="">
+    <form action="preview-page.html">
       <div class="form-one">
         <label for="">Student Information</label>
         <div class="student-info-one">
@@ -31,10 +31,11 @@
             name="firstName"
             placeholder="First Name"
             id="firstName"
+            required
           />
           <input
             type="text"
-            name=""
+            name="middleName"
             placeholder="Middle Name"
             id="middleName"
           />
@@ -43,16 +44,23 @@
             name="lastName"
             placeholder="Last Name"
             id="lastName"
+            required
           />
         </div>
         <div class="student-info-two">
           <!-- onfocus="(this.type='date')" -->
-          <input class="date-control" placeholder="Date of Birth" />
+          <input
+            class="date-control"
+            name="Date of Birth"
+            placeholder="Date of Birth"
+            required
+          />
           <input
             type="text"
             name="studentId"
             placeholder="Student ID"
             id="studentId"
+            required
           />
         </div>
       </div>
@@ -64,6 +72,7 @@
           placeholder="Street Address"
           id="streetAddress"
           class="streetAddress"
+          required
         />
         <div class="form-flex">
           <input type="text" name="city" placeholder="City" id="city" />
@@ -72,6 +81,7 @@
             name="state-province"
             placeholder="State/Province"
             id="state-province"
+            required
           />
         </div>
         <div class="form-flex">
@@ -80,20 +90,33 @@
             name="country"
             placeholder="Country"
             id="country"
+            required
           />
           <input
             type="text"
             name="zipCode"
             placeholder="Zip Code"
             id="zipCode"
+            required
           />
         </div>
       </div>
       <div class="form-three">
         <label for="">Contact Information</label>
         <div class="form-flex">
-          <input type="email" name="email" placeholder="E-mail" id="email" />
-          <input type="text" name="alt-email" placeholder="" id="alt-email" />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            id="email"
+            required
+          />
+          <input
+            type="text"
+            name="alternative-email"
+            placeholder=" Alternative-email"
+            id="alt-email"
+          />
         </div>
       </div>
       <div class="form-four">
@@ -101,44 +124,52 @@
         <div class="hero-one">
           <button id="addNewRecord"><span>+</span> Add new record</button>
           <div>
-            <select name="" id="course">
+            <select name="course" id="course" required>
               <option value="course">course</option>
               <option value="">Frontend</option>
               <option value="">Backend</option>
               <option value="">Ui/Ux</option>
             </select>
-            <select name="" id="level">
+            <select name="level" id="level" required>
               <option value="level">level</option>
               <option value="">Beginner</option>
               <option value="">Intermediate</option>
               <option value="">Expert</option>
             </select>
-            <select name="" id="language">
+            <select name="language" id="language" required>
               <option value="language">language</option>
               <option value="">English</option>
               <option value="">French</option>
               <option value="">Others</option>
             </select>
-            <select name="" id="Start Date">
+            <select name="start_Date" id="Start Date">
               <option value="Start Date">Start Date</option>
-              <option value="">Frontend</option>
-              <option value="">Backend</option>
-              <option value="">Ui/Ux</option>
+              <option value="date">
+                <!-- <input type="date" name="" id="select-date" /> -->
+                <!-- </option> -->
+              </option>
             </select>
-            <input type="text" class="empty" />
+
+            <button class="empty"></button>
+            <!-- <input type="text" class="empty" /> -->
           </div>
         </div>
         <div class="hero-two">
           <textarea
-            name=""
-            id=""
+            name="User comments"
+            id="user-comments"
             cols="30"
             rows="10"
             placeholder="Comments"
           ></textarea>
           <button type="submit">SEND REQUEST</button>
+          <!-- <input type="submit">
+            <a href="preview-page.html">SEND REQUEST</a>
+          </input> -->
         </div>
       </div>
+      <!-- <input type="submit">SEND REQUEST</input> -->
+      <!-- <a href="preview-page.html">SEND REQUEST</a> -->
     </form>
     <!-- <div
       style="
