@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body,
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+body {
+  flex-direction: column;
+}
+body h1 {
+  color: slateblue;
+}
+.container li {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.bold {
+  font-weight: bolder;
+}
+body .eachUser {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid slateblue;
+}
+ul {
+  list-style-type: circle;
+}
+a {
+  text-decoration: none;
+  color: slateblue;
+  font-size: 20px;
+}
+/* body {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+}
+.data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */

@@ -12,6 +12,7 @@ body {
   max-width: 1200px;
   margin: 50px auto 50px;
   padding: 25px;
+  color: #000;
 }
 header {
   width: 100%;
@@ -22,12 +23,15 @@ header {
 .heading {
   width: 70%;
 }
+.heading p {
+  font-size: 20px;
+}
 
 .logo {
   width: 20%px;
   height: auto;
   border-radius: 1998px;
-  border: 2px solid slateblue;
+  border: 2px solid #ffffff;
   margin: 0px auto 0px 0px;
   text-align: center;
 }
@@ -54,6 +58,9 @@ label {
   font-weight: 400;
   color: #000;
   display: block;
+}
+label span {
+  color: #cea135;
 }
 input {
   height: 35px;
@@ -121,9 +128,9 @@ input:focus {
   background-color: #ffffff;
   color: #000;
   font-size: 18px;
-  padding-left: 5px;
   border: none;
   padding: 10px 0px;
+  padding-left: 23px;
 }
 .form-four #addNewRecord > span {
   margin-right: 10px;
@@ -138,9 +145,7 @@ select {
   width: 200px;
   height: 35px;
   padding-left: 0px 10px;
-  /* margin-left: 20px; */
   font-size: 18px;
-  /* outline: 1px solid hsl(0, 23%, 97%); */
   border: 1px solid hsl(0, 23%, 97%);
 }
 select option {
@@ -149,7 +154,8 @@ select option {
 #course {
   margin-left: 0px;
 }
-.hero-one > div > button {
+/* .hero-one > div > button { */
+.hero-one > div > .empty {
   width: 280px;
   height: 33px;
   display: inline;
@@ -186,7 +192,6 @@ textarea {
     max-width: 100%;
     padding: 20px auto;
     margin: 20px auto;
-    /* overflow-x: hidden; */
   }
   .hero-one div > .empty {
     display: none;
@@ -205,11 +210,9 @@ textarea {
   .student-info-two,
   .form-flex {
     width: 100%;
-    /* margin: 0 auto; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* column-gap: 20px; */
   }
   label {
     margin-top: 20px;
@@ -222,7 +225,6 @@ textarea {
   .hero-one {
     width: 80%;
     margin: 15px 0px auto;
-    /* border: 2px solid; */
   }
 
   .hero-one,
@@ -255,6 +257,12 @@ textarea {
   }
 }
 @media (max-width: 400px) {
+  header {
+    padding-left: 10px;
+  }
+  .heading p {
+    font-size: 16px;
+  }
   body {
     padding: 10px 0px;
   }

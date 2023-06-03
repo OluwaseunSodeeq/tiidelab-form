@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiidelab Signup form</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css-files/styles.css" />
+    <script defer src="./js-files/script.js"></script>
   </head>
   <body>
     <header>
@@ -22,7 +22,7 @@
         </p>
       </div>
     </header>
-    <form action="preview-page.html">
+    <form id="form">
       <div class="form-one">
         <label for="">Student Information</label>
         <div class="student-info-one">
@@ -48,7 +48,6 @@
           />
         </div>
         <div class="student-info-two">
-          <!-- onfocus="(this.type='date')" -->
           <input
             class="date-control"
             name="Date of Birth"
@@ -113,16 +112,20 @@
           />
           <input
             type="text"
-            name="alternative-email"
-            placeholder=" Alternative-email"
-            id="alt-email"
+            name="phone-No"
+            placeholder=" Phone Number"
+            id="phone-No"
           />
         </div>
       </div>
       <div class="form-four">
         <label for="">Courses <span>*</span></label>
         <div class="hero-one">
-          <button id="addNewRecord"><span>+</span> Add new record</button>
+          <div id="addNewRecord"><span>+</span> Add new record</div>
+          <!-- <button type="menu" id="addNewRecord">
+            <span>+</span> Add new record
+          </button> -->
+
           <div>
             <select name="course" id="course" required>
               <option value="course">course</option>
@@ -145,12 +148,13 @@
             <select name="start_Date" id="Start Date">
               <option value="Start Date">Start Date</option>
               <option value="date">
+                <!-- <option  value=""> -->
                 <!-- <input type="date" name="" id="select-date" /> -->
                 <!-- </option> -->
               </option>
             </select>
 
-            <button class="empty"></button>
+            <!-- <button class="empty"></button> -->
             <!-- <input type="text" class="empty" /> -->
           </div>
         </div>
@@ -163,65 +167,8 @@
             placeholder="Comments"
           ></textarea>
           <button type="submit">SEND REQUEST</button>
-          <!-- <input type="submit">
-            <a href="preview-page.html">SEND REQUEST</a>
-          </input> -->
         </div>
       </div>
-      <!-- <input type="submit">SEND REQUEST</input> -->
-      <!-- <a href="preview-page.html">SEND REQUEST</a> -->
     </form>
-    <!-- <div
-      style="
-        background-color: mistyrose;
-        width: 70%;
-        padding: 15px;
-        margin: 40px auto;
-      "
-    >
-      <div style="width: 50%; float: left"></div>
-      <div style="width: 50%; float: left">
-        <h3>User registration Form</h3>
-        <form action="" name="signupForm" id="signupForm" enctype="">
-          <input
-            type="text"
-            name="userName"
-            id="fullName"
-            placeholder="Enter Your Full Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter Your Email Address"
-            required
-          />
-          <input
-            type="text"
-            name="username"
-            id="userName"
-            placeholder="Enter Your Username"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Enter Your Password"
-            required
-          />
-          <input
-            type="password"
-            name="confirmpassword"
-            id="confirmPassword"
-            placeholder="Enter Your Password Again"
-            required
-          />
-          <input type="submit" value="Signup" style="width: 85%" />
-        </form>
-      </div>
-    </div>
-    <div style="float: left"></div> -->
   </body>
 </html>
